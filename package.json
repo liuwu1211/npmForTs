@@ -4,7 +4,9 @@
   "description": "测试包",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "dependencies": {},
+  "dependencies": {
+    "husky": "^4.2.3"
+  },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
