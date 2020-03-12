@@ -1,7 +1,7 @@
 {
-  "name": "my_npm_ts_ark",
-  "version": "1.0.3",
-  "description": "测试包",
+  "name": "my-npm-ts-ark",
+  "version": "1.1.1",
+  "description": "ts 开发的 库",
   "main": "lib/index.umd.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
