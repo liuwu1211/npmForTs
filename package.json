@@ -4,9 +4,7 @@
   "description": "测试包",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "dependencies": {
-    "typescript": "^3.8.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
@@ -16,13 +14,15 @@
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "prettier": "^1.19.1",
+    "rollup-plugin-typescript2": "^0.26.0",
     "ts-jest": "^25.2.1",
     "tslint": "^6.0.0",
-    "tslint-config-prettier": "^1.18.0"
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "tsc -w",
-    "build": "tsc",
+    "build": "rm -rf lib && rollup --config ./build/rollup.config.js",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "commit": "git-cz",
